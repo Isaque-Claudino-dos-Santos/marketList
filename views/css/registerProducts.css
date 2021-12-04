@@ -1,0 +1,34 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .title h1 {
+    font-size: 3em;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+}
+
+main form input,
+main form select,
+main form label {
+    font-size: 1.3em;
+    padding: 3px;
+}
+
+main form input,
+main form select {
+    margin-bottom: 10px;
+    border: 1px solid;
+}
