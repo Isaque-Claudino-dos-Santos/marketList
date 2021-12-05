@@ -3,12 +3,13 @@
 require_once('./autoload.php');
 require_once('./apis/function.php');
 
-use App\Http\Router;
 use App\Controllers\HomeController;
 use App\Controllers\RegisterProductsController;
+use App\Http\Router;
 
-$home = new Router();
-$home->get('/',HomeController::index(),'home');
+$routes = new Router();
 
-$registerProducts = new Router();
-$registerProducts->get('/registerProducts',RegisterProductsController::index(),'registerProducts');
+$routes->get('/',HomeController::class,'index','home');
+$routes->get('/registerProducts',RegisterProductsController::class,'index','registerProducts');
+
+$routes->execute();
