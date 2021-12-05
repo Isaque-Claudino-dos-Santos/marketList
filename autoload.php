@@ -5,19 +5,7 @@ error_reporting(E_ALL);
 
 
 spl_autoload_register(function ($classes) {
-    $array = explode('\\',$classes);
-    $path = '';
-    $file = '';
-
-    foreach($array as $value) {
-        if(end($array) == $value) {
-            $file = $value.'.php';
-        }else {
-            $path .= strtolower($value).'/';
-        }
-    }
-
-    $res = './'.$path.$file;
-
+    $class = str_replace('\\','/',$classes);
+    $res = __DIR__.'/'.$class.'.php';
     require_once $res;
 });
