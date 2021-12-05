@@ -17,7 +17,7 @@ require_once('./apis/function.php');
            </div>
            <nav>
                <ul>
-                   <li><a href='<?php echo route('registerProducts') ?>'>Register Products</a></li>
+                   <li><a href="registerProducts">Register Products</a></li>
                </ul>
            </nav>
        </div>

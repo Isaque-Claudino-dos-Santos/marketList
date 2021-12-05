@@ -9,15 +9,13 @@ require_once('./apis/function.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo linkCss('reset.css')?>">
-    <link rel="stylesheet" href="<?php echo linkCss('registerProducts.css')?>">
     <title>Register Products</title>
 </head>
 <body>
     <main>
         <div class="title">
             <h1>Register Products</h1>
-            <button><a href="<?php echo route('home')?>">Goto Home</a></button>
+            <button><a href="/">Goto Home</a></button>
         </div>
         <form method="POST">
             <label for="name">Name</label>
