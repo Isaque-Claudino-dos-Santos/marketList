@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Router;
-require_once('./bootstrep.php');
 
+require_once('./bootstrep.php');
 
 function dd($res,$die = false) {
     echo '<pre>';
@@ -25,13 +25,6 @@ function instanciarClass($defaultPath) {
     }
 }
 
-function route($name) {
-    foreach(Router::$name as $key => $url){
-        if($name == $key) {
-            return $url;
-        }
-    };
-}
 
 function linkCss($file) {
     $path = '/views/css/';
